@@ -170,7 +170,7 @@ app.get('/giftcard/remove/:id', (req,res) =>{
 // conexao banco de dados
 const conn = mysql.createConnection({
     host: 'localhost',    
-    port: '3307',
+    port: '3306',
     user:'root',
     password: '',
     database: 'infanciagirassol'
@@ -188,5 +188,5 @@ conn.connect(function(err) {
 
 // servidor
 app.listen(port, () => {
-    console.log(`App rodando ma porta ${port}`)
+    console.log(`App rodando na porta ${port}`)
 })
